@@ -1,0 +1,95 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+  }
+  html {
+    --bg-color: #EDF2FF;
+    --text-color: #00082f;
+    --primary-color: #4263EB;
+    --primary-color-dark: #364FC7; 
+  }
+  body.dark-blue {
+    --bg-color: #00082f;
+    --text-color: #FFFFFF;
+    --primary-color: #4263EB;
+    --primary-color-dark: #364FC7;
+  }
+  body.greys {
+    --bg-color: rgb(14, 14, 14);
+    --text-color: rgb(169, 169, 169);
+    --primary-color: grey;
+    --primary-color-dark: rgba(57, 43, 43, 0.267);
+  }
+  
+  body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    /*background-image: url(https://images.unsplash.com/photo-1526925539332-aa3b66e35444?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1365&q=80);*/
+  
+  }
+  
+  .container {
+    text-align: center;
+    width: 300px;
+    margin: 60px auto;
+  }
+  img {
+    width: 100%;
+  }
+  img.avatar {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    padding: 4px;
+    border: var(--primary-color) solid 4px;
+  }
+  h1 {
+    font-size: 32px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+  .username {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    opacity: 0.8;
+    font-size: 18px;
+    }
+  ul {
+    list-style: none;
+    margin: 48px 0;
+  }
+  
+  ul li a {
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    transition: background 500ms;
+  }
+  ul li a:hover {
+    background: var(--primary-color-dark); 
+  }
+  
+  footer {
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 0.6;
+    transition: opacity 400ms;
+  }
+  footer:hover {
+    opacity: 1;
+  }
+  footer a {
+    color: var(--text-color)
+  }
